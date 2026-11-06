@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BOTS OR HUMANS: Tic Tac BLOCK!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    #status {
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+      color: #aaa;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    #board {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      gap: 3px;
+      width: 100%;
+      max-width: 360px;
+      aspect-ratio: 1 / 1;
+      background-color: #333;
+      padding: 4px;
+      border-radius: 8px;
+    }
+
+    .cell {
+      background-color: #1e1e1e;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .cell.x { color: #4facfe; }
+    .cell.o { color: #ff0844; }
+    .cell.b { color: #ffb199; }
+
+    #controls {
+      margin-top: 15px;
+      display: flex;
+      gap: 10px;
+    }
+
+    button {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 0
